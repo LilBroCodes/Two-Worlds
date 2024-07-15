@@ -11,6 +11,7 @@ import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
+import org.bukkit.util.Vector;
 
 public class NPCCommand implements CommandExecutor {
     private final TwoWorlds plugin;
@@ -44,20 +45,36 @@ public class NPCCommand implements CommandExecutor {
                     return;
                 }
                 Location location = sender.getLocation();
-                location.setX(location.getX() + plugin.getNPCOffsetX());
-                location.setY(location.getY() + plugin.getNPCOffsetY());
-                location.setZ(location.getZ() + plugin.getNPCOffsetZ());
-                npc.teleport(location, org.bukkit.event.player.PlayerTeleportEvent.TeleportCause.PLUGIN);
+                location.add(new Vector(plugin.getNPCOffsetX(), plugin.getNPCOffsetY(), plugin.getNPCOffsetZ()));
+                npc.getEntity().teleport(location, org.bukkit.event.player.PlayerTeleportEvent.TeleportCause.PLUGIN);
+
+                Player npcPlayer = (Player) npc.getEntity();
+                double damage = npcPlayer.getHealth() - sender.getHealth();
+                if (!(npcPlayer.getHealth() - damage <= 0)) {
+                    npcPlayer.setHealth(npcPlayer.getHealth() - damage);
+                    if (damage > 0) {
+                        npcPlayer.playHurtAnimation(0);
+                    }
+                } else {
+                    npcPlayer.setHealth(0);
+                }
+//                if (npcPlayer.getHealth() == sender.getHealth()) {
+//                    sender.sendMessage("Health is equal.");
+//                } else {
+//                    sender.sendMessage("NPC At: " + npcPlayer.getHealth());
+//                }
             }
         }.runTaskTimer(plugin, 0L, interval); // Use interval from config
+//        new BukkitRunnable() {
+//            @Override
+//            public void run() {
+//                Player senderPlayer = sender.getPlayer();
+//                if (senderPlayer != null) {
+//                    senderPlayer.damage(2);
+//                }
+//            }
+//        }.runTaskTimer(plugin, 0L, 20L);
 
-        Entity npcEntity = npc.getEntity();
-        if (npcEntity instanceof Player) {
-            Player npcPlayer = (Player) npcEntity;
-            sender.sendMessage(String.valueOf(npcPlayer.getHealth()));
-        } else {
-            sender.sendMessage("not pog :(");
-        }
         return true;
     }
 }

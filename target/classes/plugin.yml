@@ -4,7 +4,8 @@ main: org.lilbrocodes.twoworlds.TwoWorlds
 commands:
   fp:
     description: Creates a clone of the player
-    usage: /<command>
+    usage: /fp
+    permission: twoworlds.fp
   reloadnpcconfig:
     description: Reloads the NPC configuration
     usage: /reloadnpcconfig

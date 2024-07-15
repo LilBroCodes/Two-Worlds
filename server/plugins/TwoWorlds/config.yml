@@ -1,4 +1,4 @@
-npc-teleport-interval: 3
+npc-teleport-interval: 5
 npc-offset:
   x: 1
   y: 0

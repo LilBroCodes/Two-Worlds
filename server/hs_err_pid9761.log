@@ -1,0 +1,421 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 8589934592 bytes. Error detail: committing reserved memory.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   This process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Zero Based Compressed Oops mode in which the Java heap is
+#     placed in the first 32GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 32GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_linux.cpp:2838), pid=9761, tid=9762
+#
+# JRE version:  (17.0.11+9) (build )
+# Java VM: OpenJDK 64-Bit Server VM (17.0.11+9-LTS, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, linux-amd64)
+# No core dump will be written. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Xms8192M -Xmx8192M server.jar nogui
+
+Host: Intel(R) N100, 4 cores, 3G, Zorin OS 17.1
+Time: Mon Jul 15 22:19:28 2024 CEST elapsed time: 0.003739 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000778660025e90):  JavaThread "Unknown thread" [_thread_in_vm, id=9762, stack(0x0000778666700000,0x0000778666800000)]
+
+Stack: [0x0000778666700000,0x0000778666800000],  sp=0x00007786667fe340,  free space=1016k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0xf5bf61]  VMError::report_and_die(int, char const*, char const*, __va_list_tag*, Thread*, unsigned char*, void*, void*, char const*, int, unsigned long)+0x1a1
+V  [libjvm.so+0xf5cc0b]  VMError::report_and_die(Thread*, char const*, int, unsigned long, VMErrorType, char const*, __va_list_tag*)+0x2b
+V  [libjvm.so+0x625cb3]  report_vm_out_of_memory(char const*, int, unsigned long, VMErrorType, char const*, ...)+0xe3
+V  [libjvm.so+0xc4e778]  os::pd_commit_memory_or_exit(char*, unsigned long, unsigned long, bool, char const*)+0x108
+V  [libjvm.so+0xc47f7b]  os::commit_memory_or_exit(char*, unsigned long, unsigned long, bool, char const*)+0x1b
+V  [libjvm.so+0x767234]  G1PageBasedVirtualSpace::commit(unsigned long, unsigned long)+0x154
+V  [libjvm.so+0x77cef1]  G1RegionsLargerThanCommitSizeMapper::commit_regions(unsigned int, unsigned long, WorkGang*)+0x181
+V  [libjvm.so+0x80ac88]  HeapRegionManager::commit_regions(unsigned int, unsigned long, WorkGang*)+0x88
+V  [libjvm.so+0x80c8b9]  HeapRegionManager::expand(unsigned int, unsigned int, WorkGang*)+0x29
+V  [libjvm.so+0x80cafc]  HeapRegionManager::expand_by(unsigned int, WorkGang*)+0x7c
+V  [libjvm.so+0x717c19]  G1CollectedHeap::expand(unsigned long, WorkGang*, double*)+0xe9
+V  [libjvm.so+0x718331]  G1CollectedHeap::initialize()+0x691
+V  [libjvm.so+0xf0a511]  universe_init()+0xd1
+V  [libjvm.so+0x82f276]  init_globals()+0x36
+V  [libjvm.so+0xee0edd]  Threads::create_vm(JavaVMInitArgs*, bool*)+0x2ed
+V  [libjvm.so+0x8fb4e1]  JNI_CreateJavaVM+0x51
+C  [libjli.so+0x4891]  JavaMain+0x91
+C  [libjli.so+0x8379]  ThreadJavaMain+0x9
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00007786665fe040, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+  0x0000778660053ce0 GCTaskThread "GC Thread#0" [stack: 0x00007786643fd000,0x00007786644fd000] [id=9763]
+  0x00007786600652d0 ConcurrentGCThread "G1 Main Marker" [stack: 0x00007786642fc000,0x00007786643fc000] [id=9764]
+  0x0000778660066240 ConcurrentGCThread "G1 Conc#0" [stack: 0x00007786641fb000,0x00007786642fb000] [id=9765]
+
+[error occurred during error reporting (printing all threads), id 0xb, SIGSEGV (0xb) at pc=0x0000778665730e60]
+
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x0000778660023800] Heap_lock - owner thread: 0x0000778660025e90
+
+Heap address: 0x0000000600000000, size: 8192 MB, Compressed Oops mode: Zero based, Oop shift amount: 3
+
+CDS archive(s) mapped at: [0x0000000000000000-0x0000000000000000-0x0000000000000000), size 0, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 1.
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0, Narrow klass range: 0x0
+
+GC Precious Log:
+<Empty>
+
+Heap:
+ garbage-first heap   total 0K, used 0K [0x0000000600000000, 0x0000000800000000)
+  region size 4096K, 0 young (0K), 0 survivors (0K)
+
+[error occurred during error reporting (printing heap information), id 0xb, SIGSEGV (0xb) at pc=0x0000778665d009ba]
+
+GC Heap History (0 events):
+No events
+
+Dll operation events (1 events):
+Event: 0.002 Loaded shared library /home/lilbrocodes/.sdkman/candidates/java/17.0.11-amzn/lib/libjava.so
+
+Deoptimization events (0 events):
+No events
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+VM Operations (0 events):
+No events
+
+Events (1 events):
+Event: 0.002 Protecting memory [0x0000778666700000,0x0000778666704000] with protection modes 0
+
+
+Dynamic libraries:
+651fa4400000-651fa4401000 r-xp 00000000 103:02 3673209                   /home/lilbrocodes/.sdkman/candidates/java/17.0.11-amzn/bin/java
+651fa4601000-651fa4602000 r--p 00001000 103:02 3673209                   /home/lilbrocodes/.sdkman/candidates/java/17.0.11-amzn/bin/java
+651fa4602000-651fa4603000 rw-p 00002000 103:02 3673209                   /home/lilbrocodes/.sdkman/candidates/java/17.0.11-amzn/bin/java
+651fa4ce6000-651fa4d2e000 rw-p 00000000 00:00 0                          [heap]
+778627c18000-778628000000 rw-p 00000000 00:00 0 
+778628000000-778628021000 rw-p 00000000 00:00 0 
+778628021000-77862c000000 ---p 00000000 00:00 0 
+77862c000000-77862c021000 rw-p 00000000 00:00 0 
+77862c021000-778630000000 ---p 00000000 00:00 0 
+778630000000-778630021000 rw-p 00000000 00:00 0 
+778630021000-778634000000 ---p 00000000 00:00 0 
+7786340fd000-778636400000 rw-p 00000000 00:00 0 
+778636400000-778649400000 ---p 00000000 00:00 0 
+778649400000-778649670000 rwxp 00000000 00:00 0 
+778649670000-778650937000 ---p 00000000 00:00 0 
+778650937000-778650ba7000 rwxp 00000000 00:00 0 
+778650ba7000-778650ec8000 ---p 00000000 00:00 0 
+778650ec8000-778651138000 rwxp 00000000 00:00 0 
+778651138000-778658400000 ---p 00000000 00:00 0 
+778658400000-77865ffb8000 r--s 00000000 103:02 3673164                   /home/lilbrocodes/.sdkman/candidates/java/17.0.11-amzn/lib/modules
+778660000000-778660084000 rw-p 00000000 00:00 0 
+778660084000-778664000000 ---p 00000000 00:00 0 
+7786640f9000-7786641fa000 rw-p 00000000 00:00 0 
+7786641fa000-7786641fb000 ---p 00000000 00:00 0 
+7786641fb000-7786642fb000 rw-p 00000000 00:00 0 
+7786642fb000-7786642fc000 ---p 00000000 00:00 0 
+7786642fc000-7786643fc000 rw-p 00000000 00:00 0 
+7786643fc000-7786643fd000 ---p 00000000 00:00 0 
+7786643fd000-778664800000 rw-p 00000000 00:00 0 
+778664800000-778664824000 r-xp 00000000 103:02 3673169                   /home/lilbrocodes/.sdkman/candidates/java/17.0.11-amzn/lib/libjava.so
+778664824000-778664a24000 ---p 00024000 103:02 3673169                   /home/lilbrocodes/.sdkman/candidates/java/17.0.11-amzn/lib/libjava.so
+778664a24000-778664a25000 r--p 00024000 103:02 3673169                   /home/lilbrocodes/.sdkman/candidates/java/17.0.11-amzn/lib/libjava.so
+778664a25000-778664a26000 rw-p 00025000 103:02 3673169                   /home/lilbrocodes/.sdkman/candidates/java/17.0.11-amzn/lib/libjava.so
+778664a26000-778664a27000 rw-p 00000000 00:00 0 
+778664aff000-778664c00000 rw-p 00000000 00:00 0 
+778664c00000-778664c1b000 r-xp 00000000 103:02 3673195                   /home/lilbrocodes/.sdkman/candidates/java/17.0.11-amzn/lib/libjimage.so
+778664c1b000-778664e1a000 ---p 0001b000 103:02 3673195                   /home/lilbrocodes/.sdkman/candidates/java/17.0.11-amzn/lib/libjimage.so
+778664e1a000-778664e1c000 r--p 0001a000 103:02 3673195                   /home/lilbrocodes/.sdkman/candidates/java/17.0.11-amzn/lib/libjimage.so
+778664e1c000-778664e1d000 rw-p 0001c000 103:02 3673195                   /home/lilbrocodes/.sdkman/candidates/java/17.0.11-amzn/lib/libjimage.so
+778664f15000-778664f1a000 rw-p 00000000 00:00 0 
+778664f1a000-778665000000 ---p 00000000 00:00 0 
+778665000000-7786662c0000 r-xp 00000000 103:02 3673191                   /home/lilbrocodes/.sdkman/candidates/java/17.0.11-amzn/lib/server/libjvm.so
+7786662c0000-7786664c0000 ---p 012c0000 103:02 3673191                   /home/lilbrocodes/.sdkman/candidates/java/17.0.11-amzn/lib/server/libjvm.so
+7786664c0000-778666579000 r--p 012c0000 103:02 3673191                   /home/lilbrocodes/.sdkman/candidates/java/17.0.11-amzn/lib/server/libjvm.so
+778666579000-7786665ae000 rw-p 01379000 103:02 3673191                   /home/lilbrocodes/.sdkman/candidates/java/17.0.11-amzn/lib/server/libjvm.so
+7786665ae000-778666608000 rw-p 00000000 00:00 0 
+778666615000-77866661a000 rw-p 00000000 00:00 0 
+77866661a000-778666700000 ---p 00000000 00:00 0 
+778666700000-778666704000 ---p 00000000 00:00 0 
+778666704000-778666800000 rw-p 00000000 00:00 0 
+778666800000-778666828000 r--p 00000000 103:02 1204886                   /usr/lib/x86_64-linux-gnu/libc.so.6
+778666828000-7786669bd000 r-xp 00028000 103:02 1204886                   /usr/lib/x86_64-linux-gnu/libc.so.6
+7786669bd000-778666a15000 r--p 001bd000 103:02 1204886                   /usr/lib/x86_64-linux-gnu/libc.so.6
+778666a15000-778666a16000 ---p 00215000 103:02 1204886                   /usr/lib/x86_64-linux-gnu/libc.so.6
+778666a16000-778666a1a000 r--p 00215000 103:02 1204886                   /usr/lib/x86_64-linux-gnu/libc.so.6
+778666a1a000-778666a1c000 rw-p 00219000 103:02 1204886                   /usr/lib/x86_64-linux-gnu/libc.so.6
+778666a1c000-778666a29000 rw-p 00000000 00:00 0 
+778666a46000-778666b12000 rw-p 00000000 00:00 0 
+778666b12000-778666b19000 ---p 00000000 00:00 0 
+778666b19000-778666b27000 r--p 00000000 103:02 1205613                   /usr/lib/x86_64-linux-gnu/libm.so.6
+778666b27000-778666ba3000 r-xp 0000e000 103:02 1205613                   /usr/lib/x86_64-linux-gnu/libm.so.6
+778666ba3000-778666bfe000 r--p 0008a000 103:02 1205613                   /usr/lib/x86_64-linux-gnu/libm.so.6
+778666bfe000-778666bff000 r--p 000e4000 103:02 1205613                   /usr/lib/x86_64-linux-gnu/libm.so.6
+778666bff000-778666c00000 rw-p 000e5000 103:02 1205613                   /usr/lib/x86_64-linux-gnu/libm.so.6
+778666c00000-778666c0f000 r-xp 00000000 103:02 3673157                   /home/lilbrocodes/.sdkman/candidates/java/17.0.11-amzn/lib/libjli.so
+778666c0f000-778666e0e000 ---p 0000f000 103:02 3673157                   /home/lilbrocodes/.sdkman/candidates/java/17.0.11-amzn/lib/libjli.so
+778666e0e000-778666e0f000 r--p 0000e000 103:02 3673157                   /home/lilbrocodes/.sdkman/candidates/java/17.0.11-amzn/lib/libjli.so
+778666e0f000-778666e10000 rw-p 0000f000 103:02 3673157                   /home/lilbrocodes/.sdkman/candidates/java/17.0.11-amzn/lib/libjli.so
+778666e17000-778666e18000 r--p 00000000 103:02 1205969                   /usr/lib/x86_64-linux-gnu/librt.so.1
+778666e18000-778666e19000 r-xp 00001000 103:02 1205969                   /usr/lib/x86_64-linux-gnu/librt.so.1
+778666e19000-778666e1a000 r--p 00002000 103:02 1205969                   /usr/lib/x86_64-linux-gnu/librt.so.1
+778666e1a000-778666e1b000 r--p 00002000 103:02 1205969                   /usr/lib/x86_64-linux-gnu/librt.so.1
+778666e1b000-778666e1c000 rw-p 00003000 103:02 1205969                   /usr/lib/x86_64-linux-gnu/librt.so.1
+778666e1c000-778666e20000 rw-p 00000000 00:00 0 
+778666e20000-778666e21000 r--p 00000000 103:02 1205044                   /usr/lib/x86_64-linux-gnu/libdl.so.2
+778666e21000-778666e22000 r-xp 00001000 103:02 1205044                   /usr/lib/x86_64-linux-gnu/libdl.so.2
+778666e22000-778666e23000 r--p 00002000 103:02 1205044                   /usr/lib/x86_64-linux-gnu/libdl.so.2
+778666e23000-778666e24000 r--p 00002000 103:02 1205044                   /usr/lib/x86_64-linux-gnu/libdl.so.2
+778666e24000-778666e25000 rw-p 00003000 103:02 1205044                   /usr/lib/x86_64-linux-gnu/libdl.so.2
+778666e25000-778666e26000 r--p 00000000 103:02 1205909                   /usr/lib/x86_64-linux-gnu/libpthread.so.0
+778666e26000-778666e27000 r-xp 00001000 103:02 1205909                   /usr/lib/x86_64-linux-gnu/libpthread.so.0
+778666e27000-778666e28000 r--p 00002000 103:02 1205909                   /usr/lib/x86_64-linux-gnu/libpthread.so.0
+778666e28000-778666e29000 r--p 00002000 103:02 1205909                   /usr/lib/x86_64-linux-gnu/libpthread.so.0
+778666e29000-778666e2a000 rw-p 00003000 103:02 1205909                   /usr/lib/x86_64-linux-gnu/libpthread.so.0
+778666e2a000-778666e2c000 r--p 00000000 103:02 1206373                   /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+778666e2c000-778666e3d000 r-xp 00002000 103:02 1206373                   /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+778666e3d000-778666e43000 r--p 00013000 103:02 1206373                   /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+778666e43000-778666e44000 ---p 00019000 103:02 1206373                   /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+778666e44000-778666e45000 r--p 00019000 103:02 1206373                   /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+778666e45000-778666e46000 rw-p 0001a000 103:02 1206373                   /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+778666e4e000-778666e56000 rw-s 00000000 103:02 2098034                   /tmp/hsperfdata_lilbrocodes/9761
+778666e56000-778666e57000 ---p 00000000 00:00 0 
+778666e57000-778666e58000 r--p 00000000 00:00 0 
+778666e58000-778666e5a000 rw-p 00000000 00:00 0 
+778666e5a000-778666e5c000 r--p 00000000 103:02 1204514                   /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+778666e5c000-778666e86000 r-xp 00002000 103:02 1204514                   /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+778666e86000-778666e91000 r--p 0002c000 103:02 1204514                   /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+778666e91000-778666e92000 ---p 00000000 00:00 0 
+778666e92000-778666e94000 r--p 00037000 103:02 1204514                   /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+778666e94000-778666e96000 rw-p 00039000 103:02 1204514                   /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7ffd7bab7000-7ffd7bad9000 rw-p 00000000 00:00 0                          [stack]
+7ffd7bbce000-7ffd7bbd2000 r--p 00000000 00:00 0                          [vvar]
+7ffd7bbd2000-7ffd7bbd4000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0                  [vsyscall]
+
+
+VM Arguments:
+jvm_args: -Xms8192M -Xmx8192M 
+java_command: server.jar nogui
+java_class_path (initial): server.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 3                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 1                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 4                                         {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 4194304                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 8589934592                                {product} {command line}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 8589934592                                {product} {command line}
+   size_t MinHeapDeltaBytes                        = 4194304                                   {product} {ergonomic}
+   size_t MinHeapSize                              = 8589934592                                {product} {command line}
+    uintx NonNMethodCodeHeapSize                   = 5832780                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122912730                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122912730                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+   size_t SoftMaxHeapSize                          = 8589934592                             {manageable} {ergonomic}
+     bool UseCompressedClassPointers               = true                           {product lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                           {product lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+JAVA_HOME=/home/lilbrocodes/.sdkman/candidates/java/current
+PATH=/home/lilbrocodes/.sdkman/candidates/java/current/bin:/home/lilbrocodes/miniconda3/bin:/home/lilbrocodes/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/lilbrocodes/Applications/apache-maven-3.9.8/bin/
+USERNAME=lilbrocodes
+SHELL=/usr/bin/zsh
+DISPLAY=:0
+LANG=en_US.UTF-8
+LC_NUMERIC=hu_HU.UTF-8
+LC_TIME=hu_HU.UTF-8
+TERM=xterm-256color
+
+Active Locale:
+LC_ALL=C
+LC_COLLATE=C
+LC_CTYPE=C
+LC_MESSAGES=C
+LC_MONETARY=C
+LC_NUMERIC=C
+LC_TIME=C
+
+Signal Handlers:
+   SIGSEGV: crash_handler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO, unblocked
+    SIGBUS: crash_handler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO, unblocked
+    SIGFPE: crash_handler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO, unblocked
+   SIGPIPE: javaSignalHandler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO, blocked
+   SIGXFSZ: javaSignalHandler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO, blocked
+    SIGILL: crash_handler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO, unblocked
+   SIGUSR2: SR_handler in libjvm.so, mask=00000000000000000000000000000000, flags=SA_RESTART|SA_SIGINFO, blocked
+    SIGHUP: SIG_DFL, mask=00000000000000000000000000000000, flags=none, blocked
+    SIGINT: SIG_DFL, mask=00000000000000000000000000000000, flags=none, blocked
+   SIGTERM: SIG_DFL, mask=00000000000000000000000000000000, flags=none, blocked
+   SIGQUIT: UserHandler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO, blocked
+   SIGTRAP: crash_handler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO, unblocked
+
+
+Periodic native trim disabled
+
+
+---------------  S Y S T E M  ---------------
+
+OS:
+DISTRIB_ID=Zorin
+DISTRIB_RELEASE=17
+DISTRIB_CODENAME=jammy
+DISTRIB_DESCRIPTION="Zorin OS 17.1"
+uname: Linux 6.5.0-41-generic #41~22.04.2-Ubuntu SMP PREEMPT_DYNAMIC Mon Jun  3 11:32:55 UTC 2 x86_64
+OS uptime: 0 days 0:28 hours
+libc: glibc 2.35 NPTL 2.35 
+rlimit (soft/hard): STACK 8192k/infinity , CORE 0k/infinity , NPROC 13722/13722 , NOFILE 1048576/1048576 , AS infinity/infinity , CPU infinity/infinity , DATA infinity/infinity , FSIZE infinity/infinity , MEMLOCK 455304k/455304k
+load average: 1.18 1.03 1.11
+
+/proc/meminfo:
+MemTotal:        3642444 kB
+MemFree:          353364 kB
+MemAvailable:     572640 kB
+Buffers:            4260 kB
+Cached:           678888 kB
+SwapCached:        94420 kB
+Active:          1866684 kB
+Inactive:         947740 kB
+Active(anon):    1633160 kB
+Inactive(anon):   790620 kB
+Active(file):     233524 kB
+Inactive(file):   157120 kB
+Unevictable:       54212 kB
+Mlocked:              64 kB
+SwapTotal:       4368380 kB
+SwapFree:        1926772 kB
+Zswap:                 0 kB
+Zswapped:              0 kB
+Dirty:               692 kB
+Writeback:             0 kB
+AnonPages:       2103568 kB
+Mapped:           274428 kB
+Shmem:            292308 kB
+KReclaimable:      71972 kB
+Slab:             190800 kB
+SReclaimable:      71972 kB
+SUnreclaim:       118828 kB
+KernelStack:       15792 kB
+PageTables:        43476 kB
+SecPageTables:         0 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     6189600 kB
+Committed_AS:    9727028 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       44820 kB
+VmallocChunk:          0 kB
+Percpu:             2704 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:    65536 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+Unaccepted:            0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:      219944 kB
+DirectMap2M:     3614720 kB
+DirectMap1G:           0 kB
+
+/sys/kernel/mm/transparent_hugepage/enabled: always [madvise] never
+/sys/kernel/mm/transparent_hugepage/hpage_pmd_size: 2097152
+/sys/kernel/mm/transparent_hugepage/defrag (defrag/compaction efforts parameter): always defer defer+madvise [madvise] never
+
+Process Memory:
+Virtual Size: 1030824K (peak: 9415432K)
+Resident Set Size: 18560K (peak: 18560K) (anon: 6144K, file: 12416K, shmem: 0K)
+Swapped out: 0K
+C-Heap outstanding allocations: 13438K, retained: 537K
+glibc malloc tunables: (default)
+
+/proc/sys/kernel/threads-max (system-wide limit on the number of threads): 27444
+/proc/sys/vm/max_map_count (maximum number of memory map areas a process may have): 65530
+/proc/sys/kernel/pid_max (system-wide limit on number of process identifiers): 4194304
+
+container (cgroup) information:
+container_type: cgroupv2
+cpu_cpuset_cpus: not supported
+cpu_memory_nodes: not supported
+active_processor_count: 4
+cpu_quota: not supported
+cpu_period: not supported
+cpu_shares: not supported
+memory_limit_in_bytes: unlimited
+memory_and_swap_limit_in_bytes: unlimited
+memory_soft_limit_in_bytes: unlimited
+memory_usage_in_bytes: 1750624 k
+memory_max_usage_in_bytes: not supported
+memory_swap_current_in_bytes: 1313020 k
+memory_swap_max_limit_in_bytes: unlimited
+maximum number of tasks: 4116
+current number of tasks: 182
+
+Steal ticks since vm start: 0
+Steal ticks percentage since vm start:  0.000
+
+CPU: total 4 (initial active 4) (4 cores per cpu, 1 threads per core) family 6 model 190 stepping 0 microcode 0x17, cx8, cmov, fxsr, mmx, 3dnowpref, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, lzcnt, tsc, tscinvbit, avx, avx2, aes, erms, clmul, bmi1, bmi2, adx, sha, fma, vzeroupper, clflush, clflushopt, clwb
+CPU Model and flags from /proc/cpuinfo:
+model name	: Intel(R) N100
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize arch_lbr ibt flush_l1d arch_capabilities
+
+Online cpus: 0-3
+Offline cpus: 
+BIOS frequency limitation: <Not Available>
+Frequency switch latency (ns): 0
+Available cpu frequencies: <Not Available>
+Current governor: powersave
+Core performance/turbo boost: <Not Available>
+
+Memory: 4k page, physical 3642444k(353364k free), swap 4368380k(1926772k free)
+Page Sizes: 4k
+
+vm_info: OpenJDK 64-Bit Server VM (17.0.11+9-LTS) for linux-amd64 JRE (17.0.11+9-LTS), built on Apr 10 2024 22:07:53 by "jenkins" with gcc 7.3.1 20180303 (Red Hat 7.3.1-5)
+
+END.
