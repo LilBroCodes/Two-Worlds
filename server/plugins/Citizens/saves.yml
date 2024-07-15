@@ -1,0 +1,31 @@
+# Citizens NPC Storage
+
+last-created-npc-id: 13
+npc:
+  '13':
+    metadata:
+      cached-skin-uuid: e227e831-25ac-4db1-b9a1-fa4790eabd13
+      cached-skin-uuid-name: scapcraft
+    name: Scapcraft
+    uuid: 4cebb9c8-d93a-46e2-a28f-f8e231d23edf
+    traits:
+      type: PLAYER
+      spawned: true
+      location:
+        bodyYaw: -139.52208
+        world: world
+        x: '-549.9569'
+        y: '71.0'
+        z: '101.9016'
+        yaw: '-139.5221'
+        pitch: '8.687'
+      skintrait:
+        fetchDefaultSkin: true
+        signature: WSRJn6XAiBuOvT8kim4nlhGoxYgpI2l8CgQrxBqYR8T4D0agpN/dsdnX/VYp9tIwpi+5ZMABq1iJ5+BmVy1au98HsbIEexAtRsRganBs6rnnWKDWQP1aun6gz2W7RDKWPf8NHRjbx8Qs3PqlpoNoYfeGiIYDx0UeIi5DpVPcfWmEw+nSiSlTnwN1u4+mv2BIVNKBZlp2mlUEKkXsM9k9SWG1ZeSI1n+6FUz2U2scde/jI67czH3XbVSP+VfGykJH3Jqvfj3PS9eUucEtM/Iw8moGLZY4XoDcL+puBTy2saz+V6P1LTVNSSQpiuGV5Z+xPOUQvKOZo39eq3XJyP9JXeYTZJdOhObebetzs27+EtMd4XM76zLf0uVwzWqBLPuBhMQ/2vaVaPtzZPW2ITmxwXPBOQrCjnofMM+RnUYc/dNJWyGCFxuofUCKCGpmCh2shBktKtxtyLxdJQZXZOvaAgVXf6zCpdLoYTOW6pmTNBqG/StdlCrxqbMYCJ3F1jNRV7/7lTqMqQqTstw5O/m5AhWuSrT3x3eZwaZkMx2DA/ynhi3EkBw05V1pD/FBoONqBNWC6rc1Kj/w4InSDoRm7qM4VQZPssF05uFlZvM1AGKNWqi+pjXsYVHe7rBmFTVG58m3d3wvkmgrjeQoEc1w5CnwlXPlWqe60A93f+lf5mQ=
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTcyMTA2NzgwOTA0MywKICAicHJvZmlsZUlkIiA6ICJlMjI3ZTgzMTI1YWM0ZGIxYjlhMWZhNDc5MGVhYmQxMyIsCiAgInByb2ZpbGVOYW1lIiA6ICJTY2FwY3JhZnQiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODkwYWQ2NTIzN2YyZDg4OTg0NWY1ZWQ1NzU4ZDgwYmFmNTFjZTM5NWU2N2U0NDBkMTk1YjY0YTk5YTQ4MjAxMSIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2I0MGE5MmUzMmI1N2ZkNzMyYTAwZmMzMjVlN2FmYjAwYTdjYTc0OTM2YWQ1MGQ4ZTg2MDE1MmU0ODJjZmJkZSIKICAgIH0KICB9Cn0=
+        updateSkins: false
+    traitnames: type,spawned,scoreboardtrait,inventory,location,mounttrait,skintrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: false

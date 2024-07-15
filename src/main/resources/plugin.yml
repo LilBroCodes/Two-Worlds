@@ -1,0 +1,15 @@
+name: TwoWorlds
+version: 1.0
+main: org.lilbrocodes.twoworlds.TwoWorlds
+commands:
+  fp:
+    description: Creates a clone of the player
+    usage: /<command>
+  reloadnpcconfig:
+    description: Reloads the NPC configuration
+    usage: /reloadnpcconfig
+    permission: twoworlds.reload
+permissions:
+  twoworlds.reload:
+    description: Allows the user to reload the NPC configuration
+    default: op
