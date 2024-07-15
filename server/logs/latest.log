@@ -1,0 +1,68 @@
+[20:22:58] [ServerMain/WARN]: [oshi.driver.windows.perfmon.PerfmonDisabled] Invalid registry value type detected for PerfOS counters. Should be REG_DWORD. Ignoring: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\Disable Performance Counters.
+[20:23:02] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[20:23:04] [ServerMain/INFO]: Loaded 1174 recipes
+[20:23:04] [ServerMain/INFO]: Loaded 1271 advancements
+[20:23:04] [Server thread/INFO]: Starting minecraft server version 1.20.4
+[20:23:04] [Server thread/INFO]: Loading properties
+[20:23:04] [Server thread/INFO]: This server is running Paper version git-Paper-497 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: d8d54d9 on ver/1.20.4)
+[20:23:05] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[20:23:05] [Server thread/INFO]: Using 4 threads for Netty based IO
+[20:23:06] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[20:23:06] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 3 worker threads, and gen parallelism of 3 threads
+[20:23:06] [Server thread/INFO]: Default game type: SURVIVAL
+[20:23:06] [Server thread/INFO]: Generating keypair
+[20:23:06] [Server thread/INFO]: Starting Minecraft server on *:25565
+[20:23:06] [Server thread/INFO]: Using default channel type
+[20:23:06] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[20:23:06] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[20:23:06] [Server thread/WARN]: [org.bukkit.craftbukkit.v1_20_R3.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[20:23:08] [Server thread/WARN]: Legacy plugin TwoWorlds v1.0 does not specify an api-version.
+[20:23:08] [Server thread/INFO]: [Multiverse-Core] Loading server plugin Multiverse-Core v4.3.1-b861
+[20:23:08] [Server thread/INFO]: [TwoWorlds] Loading server plugin TwoWorlds v1.0
+[20:23:08] [Server thread/INFO]: [Multiverse-NetherPortals] Loading server plugin Multiverse-NetherPortals v4.2.3
+[20:23:08] [Server thread/INFO]: [Multiverse-Inventories] Loading server plugin Multiverse-Inventories v4.2.6
+[20:23:08] [Server thread/INFO]: [Citizens] Loading server plugin Citizens v2.0.33-SNAPSHOT (build 3395)
+[20:23:08] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[20:23:08] [Server thread/INFO]: Preparing level "world"
+[20:23:08] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[20:23:09] [Server thread/INFO]: Time elapsed: 978 ms
+[20:23:09] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[20:23:09] [Server thread/INFO]: Time elapsed: 44 ms
+[20:23:09] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[20:23:10] [Server thread/INFO]: Time elapsed: 42 ms
+[20:23:10] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v4.3.1-b861
+[20:23:10] [Server thread/WARN]: [Multiverse-Core] "Multiverse-Core v4.3.1-b861" has registered a listener for org.bukkit.event.entity.EntityCreatePortalEvent on method "public void com.onarandombox.MultiverseCore.listeners.MVPortalListener.entityPortalCreate(org.bukkit.event.entity.EntityCreatePortalEvent)", but the event is Deprecated. "Server performance will be affected"; please notify the authors [dumptruckman, Rigby, fernferret, lithium3141, main--].
+[20:23:10] [Server thread/INFO]: [Multiverse-Core] §aWe are aware of the warning about the deprecated event. There is no alternative that allows us to do what we need to do and performance impact is negligible. It is safe to ignore.
+[20:23:10] [Server thread/INFO]: [Multiverse-Core] 3 - World(s) loaded.
+[20:23:10] [Server thread/WARN]: [Multiverse-Core] Buscript failed to load! The script command will be disabled! If you would like not to see this message, use `/mv conf enablebuscript false` to disable Buscript from loading.
+[20:23:10] [Server thread/INFO]: [Multiverse-Core] Version 4.3.1-b861 (API v24) Enabled - By dumptruckman, Rigby, fernferret, lithium3141 and main--
+[20:23:10] [Server thread/INFO]: [TwoWorlds] Enabling TwoWorlds v1.0*
+[20:23:10] [Server thread/INFO]: [Multiverse-NetherPortals] Enabling Multiverse-NetherPortals v4.2.3
+[20:23:10] [Server thread/INFO]: [Multiverse-NetherPortals 4.2.3]  Enabled - By Rigby and fernferret
+[20:23:10] [Server thread/INFO]: [Multiverse-Inventories] Enabling Multiverse-Inventories v4.2.6
+[20:23:10] [Server thread/INFO]: [Multiverse-Inventories 4.2.6] enabled.
+[20:23:10] [Server thread/INFO]: [Citizens] Enabling Citizens v2.0.33-SNAPSHOT (build 3395)
+[20:23:10] [Server thread/INFO]: [Citizens] Loading external libraries
+[20:23:10] [Server thread/INFO]: [Citizens] Detected system language [[hu]]. If youd like you can contribute to Citizens translations via our Discord! https://discord.gg/Q6pZGSR
+[20:23:10] [Server thread/INFO]: [Citizens] Loaded 0 templates.
+[20:23:11] [Server thread/INFO]: Running delayed init tasks
+[20:23:11] [Server thread/INFO]: [Multiverse-Inventories] First run!
+[20:23:11] [Server thread/INFO]: [Citizens] Loaded 1 NPCs.
+[20:23:11] [Server thread/INFO]: Done (6.573s)! For help, type "help"
+[20:23:11] [Server thread/INFO]: Timings Reset
+[20:23:14] [User Authenticator #0/INFO]: UUID of player Scapcraft is e227e831-25ac-4db1-b9a1-fa4790eabd13
+[20:23:14] [Server thread/INFO]: Scapcraft joined the game
+[20:23:14] [Server thread/INFO]: Scapcraft[/127.0.0.1:62164] logged in with entity id 132 at ([world]-549.7003299245656, 71.0, 100.42894975761229)
+[20:23:25] [Server thread/INFO]: Scapcraft issued server command: /npc remove all
+[20:23:27] [Server thread/INFO]: Scapcraft issued server command: /fp
+[20:23:33] [Server thread/INFO]: Stopping server
+[20:23:33] [Server thread/INFO]: [Citizens] Disabling Citizens v2.0.33-SNAPSHOT (build 3395)
+[20:23:33] [Server thread/INFO]: [Multiverse-Inventories] Disabling Multiverse-Inventories v4.2.6
+[20:23:33] [Server thread/INFO]: [Multiverse-NetherPortals] Disabling Multiverse-NetherPortals v4.2.3
+[20:23:33] [Server thread/INFO]: [Multiverse-NetherPortals] - Disabled
+[20:23:33] [Server thread/INFO]: [TwoWorlds] Disabling TwoWorlds v1.0
+[20:23:33] [Server thread/INFO]: [Multiverse-Core] Disabling Multiverse-Core v4.3.1-b861
+[20:23:33] [Server thread/INFO]: Saving players
+[20:23:33] [Server thread/INFO]: Scapcraft lost connection: Server closed
