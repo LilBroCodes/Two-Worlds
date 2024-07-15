@@ -24,7 +24,7 @@ npc:
         textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTcyMTA3ODEyMjQ3MCwKICAicHJvZmlsZUlkIiA6ICJlMjI3ZTgzMTI1YWM0ZGIxYjlhMWZhNDc5MGVhYmQxMyIsCiAgInByb2ZpbGVOYW1lIiA6ICJTY2FwY3JhZnQiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODkwYWQ2NTIzN2YyZDg4OTg0NWY1ZWQ1NzU4ZDgwYmFmNTFjZTM5NWU2N2U0NDBkMTk1YjY0YTk5YTQ4MjAxMSIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2I0MGE5MmUzMmI1N2ZkNzMyYTAwZmMzMjVlN2FmYjAwYTdjYTc0OTM2YWQ1MGQ4ZTg2MDE1MmU0ODJjZmJkZSIKICAgIH0KICB9Cn0=
         updateSkins: false
       type: PLAYER
-    traitnames: mounttrait,skintrait,scoreboardtrait,type,spawned,inventory,location
+    traitnames: type,mounttrait,spawned,scoreboardtrait,inventory,skintrait,location
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
