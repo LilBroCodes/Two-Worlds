@@ -6,19 +6,10 @@ import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.Objects;
-import java.util.logging.Logger;
 
 public final class TwoWorlds extends JavaPlugin {
-    private static TwoWorlds instance;
-    private static final Logger logger = Logger.getLogger("Two-Worlds");
-
-    public static TwoWorlds getInstance() {
-        return instance;
-    }
-
     @Override
     public void onEnable() {
-        instance = this;
         saveDefaultConfig();
         Objects.requireNonNull(this.getCommand("fp")).setExecutor(new NPCCommand(this));
         Objects.requireNonNull(this.getCommand("reloadnpcconfig")).setExecutor(new ReloadCommand(this));
