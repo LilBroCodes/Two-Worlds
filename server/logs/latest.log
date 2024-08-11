@@ -1,74 +1,200 @@
-[00:35:39] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[00:35:42] [ServerMain/INFO]: Loaded 1174 recipes
-[00:35:43] [ServerMain/INFO]: Loaded 1271 advancements
-[00:35:43] [Server thread/INFO]: Starting minecraft server version 1.20.4
-[00:35:43] [Server thread/INFO]: Loading properties
-[00:35:44] [Server thread/INFO]: This server is running Paper version git-Paper-497 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: d8d54d9 on ver/1.20.4)
-[00:35:44] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[00:35:44] [Server thread/INFO]: Using 4 threads for Netty based IO
-[00:35:45] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+[21:02:27] [ServerMain/WARN]: [oshi.driver.windows.perfmon.PerfmonDisabled] Invalid registry value type detected for PerfOS counters. Should be REG_DWORD. Ignoring: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\Disable Performance Counters.
+[21:02:31] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[21:02:32] [ServerMain/INFO]: Loaded 1174 recipes
+[21:02:32] [ServerMain/INFO]: Loaded 1271 advancements
+[21:02:32] [Server thread/INFO]: Starting minecraft server version 1.20.4
+[21:02:32] [Server thread/INFO]: Loading properties
+[21:02:32] [Server thread/INFO]: This server is running Paper version git-Paper-497 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: d8d54d9 on ver/1.20.4)
+[21:02:33] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[21:02:33] [Server thread/INFO]: Using 4 threads for Netty based IO
+[21:02:33] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
     We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
     For more information please visit: https://github.com/PaperMC/Paper/issues/8948
-[00:35:45] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
-[00:35:45] [Server thread/INFO]: Default game type: SURVIVAL
-[00:35:45] [Server thread/INFO]: Generating keypair
-[00:35:45] [Server thread/INFO]: Starting Minecraft server on *:25565
-[00:35:46] [Server thread/INFO]: Using epoll channel type
-[00:35:46] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
-[00:35:46] [Server thread/INFO]: Paper: Using OpenSSL 3.0.x (Linux x86_64) cipher from Velocity.
-[00:35:46] [Server thread/WARN]: [org.bukkit.craftbukkit.v1_20_R3.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
-[00:35:51] [Server thread/WARN]: Legacy plugin TwoWorlds v1.0 does not specify an api-version.
-[00:35:52] [Server thread/INFO]: [Multiverse-Core] Loading server plugin Multiverse-Core v4.3.1-b861
-[00:35:52] [Server thread/INFO]: [TwoWorlds] Loading server plugin TwoWorlds v1.0
-[00:35:52] [Server thread/INFO]: [Multiverse-NetherPortals] Loading server plugin Multiverse-NetherPortals v4.2.3
-[00:35:52] [Server thread/INFO]: [Multiverse-Inventories] Loading server plugin Multiverse-Inventories v4.2.6
-[00:35:52] [Server thread/INFO]: [Citizens] Loading server plugin Citizens v2.0.33-SNAPSHOT (build 3395)
-[00:35:52] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[00:35:52] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[00:35:52] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[00:35:52] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[00:35:52] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[00:35:52] [Server thread/INFO]: Preparing level "world"
-[00:35:52] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[00:35:53] [Server thread/INFO]: Time elapsed: 316 ms
-[00:35:53] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[00:35:54] [Server thread/INFO]: Time elapsed: 1300 ms
-[00:35:54] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[00:35:54] [Server thread/INFO]: Time elapsed: 129 ms
-[00:35:54] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v4.3.1-b861
-[00:35:54] [Server thread/WARN]: [Multiverse-Core] "Multiverse-Core v4.3.1-b861" has registered a listener for org.bukkit.event.entity.EntityCreatePortalEvent on method "public void com.onarandombox.MultiverseCore.listeners.MVPortalListener.entityPortalCreate(org.bukkit.event.entity.EntityCreatePortalEvent)", but the event is Deprecated. "Server performance will be affected"; please notify the authors [dumptruckman, Rigby, fernferret, lithium3141, main--].
-[00:35:54] [Server thread/INFO]: [Multiverse-Core] §aWe are aware of the warning about the deprecated event. There is no alternative that allows us to do what we need to do and performance impact is negligible. It is safe to ignore.
-[00:35:54] [Server thread/INFO]: [Multiverse-Core] 3 - World(s) loaded.
-[00:35:54] [Server thread/INFO]: [Multiverse-Core] Version 4.3.1-b861 (API v24) Enabled - By dumptruckman, Rigby, fernferret, lithium3141 and main--
-[00:35:54] [Server thread/INFO]: [TwoWorlds] Enabling TwoWorlds v1.0*
-[00:35:54] [Server thread/INFO]: 
-[00:35:54] [Server thread/INFO]:                    ░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░                      
-[00:35:55] [Server thread/INFO]:                       ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░                     
-[00:35:55] [Server thread/INFO]:                       ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░                     
-[00:35:55] [Server thread/INFO]:                       ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░                     
-[00:35:55] [Server thread/INFO]:                       ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░                     
-[00:35:55] [Server thread/INFO]:                       ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░                     
-[00:35:55] [Server thread/INFO]:                       ░▒▓█▓▒░    ░▒▓█████████████▓▒░ ░▒▓██████▓▒░                      
-[00:35:55] [Server thread/INFO]:                                  Enabling Two Worlds                                   
-[00:35:55] [Server thread/INFO]: ███████████████████████████████████████████████████████████████████████████████████████
-[00:35:55] [Server thread/INFO]:                               Made with ♥ by LilBroCodes                               
-[00:35:55] [Server thread/INFO]: ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░░▒▓███████▓▒░░▒▓█▓▒░      ░▒▓███████▓▒░ ░▒▓███████▓▒░ 
-[00:35:55] [Server thread/INFO]: ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░        
-[00:35:55] [Server thread/INFO]: ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░        
-[00:35:55] [Server thread/INFO]: ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓███████▓▒░░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░  
-[00:35:55] [Server thread/INFO]: ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░ 
-[00:35:55] [Server thread/INFO]: ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░ 
-[00:35:55] [Server thread/INFO]:  ░▒▓█████████████▓▒░ ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓████████▓▒░▒▓███████▓▒░░▒▓███████▓▒░  
-[00:35:55] [Server thread/INFO]: 
-[00:35:55] [Server thread/INFO]: [Multiverse-NetherPortals] Enabling Multiverse-NetherPortals v4.2.3
-[00:35:55] [Server thread/INFO]: [Multiverse-NetherPortals 4.2.3]  Enabled - By Rigby and fernferret
-[00:35:55] [Server thread/INFO]: [Multiverse-Inventories] Enabling Multiverse-Inventories v4.2.6
-[00:35:55] [Server thread/INFO]: [Multiverse-Inventories 4.2.6] enabled.
-[00:35:55] [Server thread/INFO]: [Citizens] Enabling Citizens v2.0.33-SNAPSHOT (build 3395)
-[00:35:55] [Server thread/INFO]: [Citizens] Loading external libraries
-[00:35:56] [Server thread/INFO]: [Citizens] Loaded 0 templates.
-[00:35:57] [Server thread/INFO]: Running delayed init tasks
-[00:35:57] [Server thread/INFO]: [Multiverse-Inventories] First run!
-[00:35:58] [Server thread/INFO]: [Citizens] Loaded 1 NPCs.
-[00:35:58] [Server thread/INFO]: Done (14.679s)! For help, type "help"
-[00:35:58] [Server thread/INFO]: Timings Reset
+[21:02:33] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 3 worker threads, and gen parallelism of 3 threads
+[21:02:33] [Server thread/INFO]: Default game type: SURVIVAL
+[21:02:33] [Server thread/INFO]: Generating keypair
+[21:02:33] [Server thread/INFO]: Starting Minecraft server on *:25565
+[21:02:34] [Server thread/INFO]: Using default channel type
+[21:02:34] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[21:02:34] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[21:02:34] [Server thread/INFO]: [Multiverse-Core] Loading server plugin Multiverse-Core v4.3.1-b861
+[21:02:34] [Server thread/INFO]: [TwoWorlds] Loading server plugin TwoWorlds v1.0
+[21:02:34] [Server thread/INFO]: [Multiverse-NetherPortals] Loading server plugin Multiverse-NetherPortals v4.2.3
+[21:02:34] [Server thread/INFO]: [Multiverse-Inventories] Loading server plugin Multiverse-Inventories v4.2.6
+[21:02:34] [Server thread/INFO]: [Citizens] Loading server plugin Citizens v2.0.33-SNAPSHOT (build 3395)
+[21:02:34] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[21:02:34] [Server thread/INFO]: Preparing level "world"
+[21:02:34] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[21:02:35] [Server thread/INFO]: Time elapsed: 845 ms
+[21:02:35] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[21:02:35] [Server thread/INFO]: Time elapsed: 33 ms
+[21:02:35] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[21:02:35] [Server thread/INFO]: Time elapsed: 20 ms
+[21:02:35] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v4.3.1-b861
+[21:02:35] [Server thread/WARN]: [Multiverse-Core] "Multiverse-Core v4.3.1-b861" has registered a listener for org.bukkit.event.entity.EntityCreatePortalEvent on method "public void com.onarandombox.MultiverseCore.listeners.MVPortalListener.entityPortalCreate(org.bukkit.event.entity.EntityCreatePortalEvent)", but the event is Deprecated. "Server performance will be affected"; please notify the authors [dumptruckman, Rigby, fernferret, lithium3141, main--].
+[21:02:35] [Server thread/INFO]: [Multiverse-Core] §aWe are aware of the warning about the deprecated event. There is no alternative that allows us to do what we need to do and performance impact is negligible. It is safe to ignore.
+[21:02:35] [Server thread/INFO]: [Multiverse-Core] 3 - World(s) loaded.
+[21:02:35] [Server thread/INFO]: [Multiverse-Core] Version 4.3.1-b861 (API v24) Enabled - By dumptruckman, Rigby, fernferret, lithium3141 and main--
+[21:02:35] [Server thread/INFO]: [TwoWorlds] Enabling TwoWorlds v1.0
+[21:02:35] [Server thread/INFO]: 
+[21:02:35] [Server thread/INFO]:                    ░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░                      
+[21:02:35] [Server thread/INFO]:                       ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░                     
+[21:02:35] [Server thread/INFO]:                       ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░                     
+[21:02:35] [Server thread/INFO]:                       ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░                     
+[21:02:35] [Server thread/INFO]:                       ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░                     
+[21:02:35] [Server thread/INFO]:                       ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░                     
+[21:02:35] [Server thread/INFO]:                       ░▒▓█▓▒░    ░▒▓█████████████▓▒░ ░▒▓██████▓▒░                      
+[21:02:35] [Server thread/INFO]:                                Enabling Two Worlds v1.1                                
+[21:02:35] [Server thread/INFO]: ███████████████████████████████████████████████████████████████████████████████████████
+[21:02:35] [Server thread/INFO]:                               Made with ♥ by LilBroCodes                               
+[21:02:35] [Server thread/INFO]: ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░░▒▓███████▓▒░░▒▓█▓▒░      ░▒▓███████▓▒░ ░▒▓███████▓▒░ 
+[21:02:35] [Server thread/INFO]: ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░        
+[21:02:35] [Server thread/INFO]: ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░        
+[21:02:35] [Server thread/INFO]: ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓███████▓▒░░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░  
+[21:02:35] [Server thread/INFO]: ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░ 
+[21:02:35] [Server thread/INFO]: ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░ 
+[21:02:35] [Server thread/INFO]:  ░▒▓█████████████▓▒░ ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓████████▓▒░▒▓███████▓▒░░▒▓███████▓▒░  
+[21:02:35] [Server thread/INFO]: 
+[21:02:35] [Server thread/INFO]: [Multiverse-NetherPortals] Enabling Multiverse-NetherPortals v4.2.3
+[21:02:35] [Server thread/INFO]: [Multiverse-NetherPortals 4.2.3]  Enabled - By Rigby and fernferret
+[21:02:35] [Server thread/INFO]: [Multiverse-Inventories] Enabling Multiverse-Inventories v4.2.6
+[21:02:36] [Server thread/INFO]: [Multiverse-Inventories 4.2.6] enabled.
+[21:02:36] [Server thread/INFO]: [Citizens] Enabling Citizens v2.0.33-SNAPSHOT (build 3395)
+[21:02:36] [Server thread/INFO]: [Citizens] Loading external libraries
+[21:02:36] [Server thread/INFO]: [Citizens] Detected system language [[hu]]. If youd like you can contribute to Citizens translations via our Discord! https://discord.gg/Q6pZGSR
+[21:02:36] [Server thread/INFO]: [Citizens] Loaded 0 templates.
+[21:02:36] [Server thread/INFO]: Running delayed init tasks
+[21:02:36] [Server thread/INFO]: [Multiverse-Inventories] First run!
+[21:02:36] [Server thread/INFO]: [Citizens] Loaded 0 NPCs.
+[21:02:36] [Server thread/INFO]: Done (3.889s)! For help, type "help"
+[21:02:36] [Server thread/INFO]: Timings Reset
+[21:02:39] [User Authenticator #0/INFO]: UUID of player Scapcraft is e227e831-25ac-4db1-b9a1-fa4790eabd13
+[21:02:39] [Server thread/INFO]: Scapcraft joined the game
+[21:02:40] [Server thread/INFO]: Scapcraft[/127.0.0.1:51158] logged in with entity id 214 at ([world]-449.69999998807907, 63.0, 103.27443117046718)
+[21:02:43] [Server thread/INFO]: Scapcraft issued server command: /gamemode spectator
+[21:02:43] [Server thread/INFO]: [Scapcraft: Set own game mode to Spectator Mode]
+[21:02:48] [Server thread/INFO]: Scapcraft issued server command: /gamemode survival
+[21:02:48] [Server thread/INFO]: [Scapcraft: Set own game mode to Survival Mode]
+[21:02:54] [Server thread/INFO]: Scapcraft issued server command: /repair all
+[21:02:56] [Server thread/INFO]: Scapcraft issued server command: /fp
+[21:04:11] [Server thread/INFO]: Scapcraft issued server command: /npc rem all
+[21:04:22] [Server thread/INFO]: Scapcraft issued server command: /reloadnpcconfig
+[21:04:24] [Server thread/INFO]: Scapcraft issued server command: /reload confirm
+[21:04:24] [Server thread/INFO]: Scapcraft: Please note that this command is not supported and may cause issues when using some plugins.
+[21:04:24] [Server thread/INFO]: Scapcraft: If you encounter any issues please use the /stop command to restart your server.
+[21:04:24] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[21:04:24] [Server thread/INFO]: Using 4 threads for Netty based IO
+[21:04:24] [Server thread/INFO]: [Citizens] Disabling Citizens v2.0.33-SNAPSHOT (build 3395)
+[21:04:25] [Server thread/INFO]: [Multiverse-Inventories] Disabling Multiverse-Inventories v4.2.6
+[21:04:25] [Server thread/INFO]: [Multiverse-NetherPortals] Disabling Multiverse-NetherPortals v4.2.3
+[21:04:25] [Server thread/INFO]: [Multiverse-NetherPortals] - Disabled
+[21:04:25] [Server thread/INFO]: [TwoWorlds] Disabling TwoWorlds v1.0
+[21:04:25] [Server thread/INFO]: [Multiverse-Core] Disabling Multiverse-Core v4.3.1-b861
+[21:04:25] [Server thread/INFO]: Loaded 1174 recipes
+[21:04:25] [Server thread/INFO]: Loaded 1271 advancements
+[21:04:25] [Server thread/INFO]: [Multiverse-Core] Loading server plugin Multiverse-Core v4.3.1-b861
+[21:04:25] [Server thread/INFO]: [TwoWorlds] Loading server plugin TwoWorlds v1.0
+[21:04:25] [Server thread/INFO]: [Multiverse-NetherPortals] Loading server plugin Multiverse-NetherPortals v4.2.3
+[21:04:25] [Server thread/INFO]: [Multiverse-Inventories] Loading server plugin Multiverse-Inventories v4.2.6
+[21:04:25] [Server thread/INFO]: [Citizens] Loading server plugin Citizens v2.0.33-SNAPSHOT (build 3395)
+[21:04:25] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[21:04:25] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v4.3.1-b861
+[21:04:25] [Server thread/WARN]: [Multiverse-Core] "Multiverse-Core v4.3.1-b861" has registered a listener for org.bukkit.event.entity.EntityCreatePortalEvent on method "public void com.onarandombox.MultiverseCore.listeners.MVPortalListener.entityPortalCreate(org.bukkit.event.entity.EntityCreatePortalEvent)", but the event is Deprecated. "Server performance will be affected"; please notify the authors [dumptruckman, Rigby, fernferret, lithium3141, main--].
+[21:04:25] [Server thread/INFO]: [Multiverse-Core] §aWe are aware of the warning about the deprecated event. There is no alternative that allows us to do what we need to do and performance impact is negligible. It is safe to ignore.
+[21:04:25] [Server thread/INFO]: [Multiverse-Core] 3 - World(s) loaded.
+[21:04:25] [Server thread/INFO]: [Multiverse-Core] Version 4.3.1-b861 (API v24) Enabled - By dumptruckman, Rigby, fernferret, lithium3141 and main--
+[21:04:25] [Server thread/INFO]: [TwoWorlds] Enabling TwoWorlds v1.0
+[21:04:25] [Server thread/INFO]: 
+[21:04:25] [Server thread/INFO]:                    ░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░                      
+[21:04:25] [Server thread/INFO]:                       ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░                     
+[21:04:25] [Server thread/INFO]:                       ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░                     
+[21:04:25] [Server thread/INFO]:                       ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░                     
+[21:04:25] [Server thread/INFO]:                       ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░                     
+[21:04:25] [Server thread/INFO]:                       ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░                     
+[21:04:25] [Server thread/INFO]:                       ░▒▓█▓▒░    ░▒▓█████████████▓▒░ ░▒▓██████▓▒░                      
+[21:04:25] [Server thread/INFO]:                                Enabling Two Worlds v1.1                                
+[21:04:25] [Server thread/INFO]: ███████████████████████████████████████████████████████████████████████████████████████
+[21:04:25] [Server thread/INFO]:                               Made with ♥ by LilBroCodes                               
+[21:04:25] [Server thread/INFO]: ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░░▒▓███████▓▒░░▒▓█▓▒░      ░▒▓███████▓▒░ ░▒▓███████▓▒░ 
+[21:04:25] [Server thread/INFO]: ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░        
+[21:04:25] [Server thread/INFO]: ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░        
+[21:04:25] [Server thread/INFO]: ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓███████▓▒░░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░  
+[21:04:25] [Server thread/INFO]: ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░ 
+[21:04:25] [Server thread/INFO]: ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░ 
+[21:04:25] [Server thread/INFO]:  ░▒▓█████████████▓▒░ ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓████████▓▒░▒▓███████▓▒░░▒▓███████▓▒░  
+[21:04:25] [Server thread/INFO]: 
+[21:04:25] [Server thread/INFO]: [Multiverse-NetherPortals] Enabling Multiverse-NetherPortals v4.2.3
+[21:04:25] [Server thread/INFO]: [Multiverse-NetherPortals 4.2.3]  Enabled - By Rigby and fernferret
+[21:04:25] [Server thread/INFO]: [Multiverse-Inventories] Enabling Multiverse-Inventories v4.2.6
+[21:04:25] [Server thread/INFO]: [Multiverse-Inventories 4.2.6] enabled.
+[21:04:25] [Server thread/INFO]: [Citizens] Enabling Citizens v2.0.33-SNAPSHOT (build 3395)
+[21:04:25] [Server thread/INFO]: [Citizens] Loading external libraries
+[21:04:25] [Server thread/INFO]: [Citizens] Detected system language [[hu]]. If youd like you can contribute to Citizens translations via our Discord! https://discord.gg/Q6pZGSR
+[21:04:26] [Server thread/INFO]: [Citizens] Loaded 0 templates.
+[21:04:26] [Server thread/INFO]: Scapcraft: Reload complete.
+[21:04:26] [Server thread/INFO]: Timings Reset
+[21:04:26] [Server thread/INFO]: [Multiverse-Inventories] First run!
+[21:04:26] [Server thread/INFO]: [Citizens] Loaded 0 NPCs.
+[21:04:30] [Server thread/INFO]: Scapcraft issued server command: /fp
+[21:04:54] [Server thread/INFO]: Scapcraft issued server command: /data get entity 9175ca74-2d17-250e-b03b-da2de70fdf33
+[21:05:40] [Server thread/INFO]: Scapcraft issued server command: /effect clear
+[21:05:40] [Server thread/INFO]: [Scapcraft: Removed every effect from Scapcraft]
+[21:06:02] [Server thread/INFO]: Scapcraft issued server command: /effect clear 9175ca74-2d17-250e-b03b-da2de70fdf33
+[21:06:02] [Server thread/INFO]: [Scapcraft: Removed every effect from Scapcraft]
+[21:06:19] [Server thread/INFO]: Scapcraft was slain by 
+[21:06:19] [Server thread/INFO]: Scapcraft died
+[21:07:40] [Server thread/INFO]: Scapcraft issued server command: /fp
+[21:08:10] [Server thread/INFO]: Scapcraft issued server command: /effect give Scapcraft minecraft:luck 10
+[21:08:10] [Server thread/INFO]: [Scapcraft: Applied effect Luck to Scapcraft]
+[21:08:19] [Server thread/INFO]: Scapcraft issued server command: /npc rem all
+[21:08:21] [Server thread/INFO]: Scapcraft issued server command: /fp
+[21:08:23] [Server thread/INFO]: Scapcraft issued server command: /effect give Scapcraft minecraft:luck 10
+[21:08:23] [Server thread/INFO]: [Scapcraft: Applied effect Luck to Scapcraft]
+[21:08:35] [Server thread/INFO]: Scapcraft issued server command: /effect give Scapcraft minecraft:luck 10
+[21:08:35] [Server thread/INFO]: [Scapcraft: Applied effect Luck to Scapcraft]
+[21:09:01] [Server thread/INFO]: Scapcraft issued server command: /effect give Scapcraft minecraft:luck infinite 1
+[21:09:01] [Server thread/INFO]: [Scapcraft: Applied effect Luck to Scapcraft]
+[21:09:23] [Server thread/INFO]: Scapcraft issued server command: /effect give Scapcraft minecraft:luck 1 1
+[21:09:26] [Server thread/INFO]: Scapcraft issued server command: /effect clear
+[21:09:26] [Server thread/INFO]: [Scapcraft: Removed every effect from Scapcraft]
+[21:09:31] [Server thread/INFO]: Scapcraft issued server command: /effect clear @a
+[21:09:33] [Server thread/INFO]: Scapcraft issued server command: /effect clear @e
+[21:09:33] [Server thread/INFO]: [Scapcraft: Removed every effect from 212 targets]
+[21:09:35] [Server thread/INFO]: Scapcraft issued server command: /effect clear @e
+[21:10:26] [Server thread/INFO]: Scapcraft was slain by 
+[21:10:27] [Server thread/INFO]: Scapcraft died
+[21:12:14] [Server thread/INFO]: Scapcraft issued server command: /stop
+[21:12:14] [Server thread/INFO]: [Scapcraft: Stopping the server]
+[21:12:14] [Server thread/INFO]: Stopping server
+[21:12:14] [Server thread/INFO]: [Citizens] Disabling Citizens v2.0.33-SNAPSHOT (build 3395)
+[21:12:14] [Server thread/INFO]: [Multiverse-Inventories] Disabling Multiverse-Inventories v4.2.6
+[21:12:14] [Server thread/INFO]: [Multiverse-NetherPortals] Disabling Multiverse-NetherPortals v4.2.3
+[21:12:14] [Server thread/INFO]: [Multiverse-NetherPortals] - Disabled
+[21:12:14] [Server thread/INFO]: [TwoWorlds] Disabling TwoWorlds v1.0
+[21:12:14] [Server thread/INFO]: [Multiverse-Core] Disabling Multiverse-Core v4.3.1-b861
+[21:12:14] [Server thread/INFO]: Saving players
+[21:12:14] [Server thread/INFO]: Scapcraft lost connection: Server closed
+[21:12:14] [Server thread/INFO]: Scapcraft left the game
+[21:12:14] [Server thread/INFO]: Saving worlds
+[21:12:14] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[21:12:14] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[21:12:14] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[21:12:14] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[21:12:14] [Server thread/INFO]: [ChunkHolderManager] Saved 17 block chunks, 137 entity chunks, 0 poi chunks in world 'world' in 0,03s
+[21:12:15] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[21:12:15] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[21:12:15] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[21:12:15] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[21:12:15] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[21:12:15] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 12 entity chunks, 0 poi chunks in world 'world_nether' in 0,00s
+[21:12:15] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[21:12:15] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[21:12:15] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[21:12:15] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[21:12:15] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[21:12:15] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0,00s
+[21:12:15] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[21:12:15] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[21:12:15] [Server thread/INFO]: Flushing Chunk IO
+[21:12:15] [Server thread/INFO]: Closing Thread Pool
+[21:12:15] [Server thread/INFO]: Closing Server

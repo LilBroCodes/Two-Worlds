@@ -1,30 +1,42 @@
 # Citizens NPC Storage
 
-last-created-npc-id: 28
+last-created-npc-id: 99
 npc:
-  '28':
+  '99':
     metadata:
       cached-skin-uuid: e227e831-25ac-4db1-b9a1-fa4790eabd13
       cached-skin-uuid-name: scapcraft
     name: Scapcraft
-    uuid: 5c204bd5-7866-4281-8394-da76a2599d94
+    uuid: df85ced3-0b69-45ac-860c-2c705eeba36d
     traits:
+      type: PLAYER
       location:
-        bodyYaw: 179.5503
+        bodyYaw: -92.53134
         world: world
-        x: '-520.7486'
-        y: '95.0'
-        z: '243.3756'
-        yaw: '179.5503'
-        pitch: '7.5002'
+        x: '-540.608'
+        y: '70.3326'
+        z: '82.2596'
+        yaw: '-92.5313'
+        pitch: '22.4976'
       spawned: true
+      inventory:
+        '0':
+          type_key: netherite_axe
+          amount: 1
+          meta:
+            encoded-meta: rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGphdmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAAA3QAAj09dAAJbWV0YS10eXBldAAIZW5jaGFudHN1cQB+AAYAAAADdAAISXRlbU1ldGF0AApVTlNQRUNJRklDc3EAfgADdXEAfgAGAAAABXQACURJR19TUEVFRHQAEUxPT1RfQk9OVVNfQkxPQ0tTdAAHTUVORElOR3QACkRBTUFHRV9BTEx0AApEVVJBQklMSVRZdXEAfgAGAAAABXNyABFqYXZhLmxhbmcuSW50ZWdlchLioKT3gYc4AgABSQAFdmFsdWV4cgAQamF2YS5sYW5nLk51bWJlcoaslR0LlOCLAgAAeHAAAAAFc3EAfgAWAAAAA3NxAH4AFgAAAAFxAH4AGHEAfgAZ
+          enchantments:
+            efficiency: 5
+            fortune: 3
+            mending: 1
+            sharpness: 5
+            unbreaking: 3
       skintrait:
         fetchDefaultSkin: true
-        signature: eBFZ0BtO8qKZzMB9gv4Fdkti1DBjxtxdiwyTlHpXkXwDeTwpVruc3gTn1tN15Le3xvfvOdzmleMx/3yefzxf26rSt12RCriIz4oaqDqpttXZWqOEr1y0KLu0WwAfprRHqiZUSDAXeJ3h515P1MU1qxxV6HrcdVuYraw4EW4l8VsPYLRYuVHAYkHQComKKxSBwmOHpphtkfJV741S8l4Jf/0ULPNE60kedzGQj5I0dBsx6H68ay7t7DBTrYBTyIfyDoPtlcnr/U4NCqe/7H12XbbAk6JVbpDprTVzTq+lxLDUQIgOsJeQt8/tZlcyHXQEFUwv2d31fv9f+hsNpJapPtwQbqX8vrElAisG5gxIOXeIw9ghgEDZK9QD1AE9r6YBjUPlcvgC9xhmovmWFqXI0V4bbOe+YGgFYHMGi9rVhFpo+WXy0mWAPFY398PXsUyYZ9VKc9irpgF/2Uj8Ft75QKWNvWADCvR1p7npZ1r8wl8s6a/F5+iWku9K7ogvpu54cdsDT4dwiuXUSUh2LMv3XSmWfBQEBI0stffpmxlaGMAjvAnz7uKcwuwYbh7EFo2Go51lrBBZKT7QeyARUVCtvRGxvArthFlDXszUTfSz63J33UdvWgObJj2sX6f0NGorzdYtT9O3tFzfEk+46eWKgscX57lte0ZW4vCHE9fsjPc=
-        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTcyMTA3ODEyMjQ3MCwKICAicHJvZmlsZUlkIiA6ICJlMjI3ZTgzMTI1YWM0ZGIxYjlhMWZhNDc5MGVhYmQxMyIsCiAgInByb2ZpbGVOYW1lIiA6ICJTY2FwY3JhZnQiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODkwYWQ2NTIzN2YyZDg4OTg0NWY1ZWQ1NzU4ZDgwYmFmNTFjZTM5NWU2N2U0NDBkMTk1YjY0YTk5YTQ4MjAxMSIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2I0MGE5MmUzMmI1N2ZkNzMyYTAwZmMzMjVlN2FmYjAwYTdjYTc0OTM2YWQ1MGQ4ZTg2MDE1MmU0ODJjZmJkZSIKICAgIH0KICB9Cn0=
+        signature: vD3UD7YcqKpVzTIgzuEzcDeDTotsSx2XdA20KcaEFBfgvc74l8Yns8/ajOsXWHUKGYYbke53co7u+pw2RIjgmqM9QoN6bi3dKGS8AU6fCiGXUinNOk+DfCEq7mI11YH5CjgXsuQn5nWZnHDYeV2gvEyHTbaA6D/Gc6ceHoHJBsmGP3CdCuC7fgiFJV+jt98RVHWIc/zKu3rmrh6U224vY0P/yekfE0kHk71C398VS4zigSaXaAjTbSKI/uStmCtsQEy0PmbdHOZsY6t8ltHqdqqVM5A77JEZWyarsuigZpcjS4s/PxAzdEzD8IMsWQJa4VpWr7YxzJTtI5AFY9vYWhXzm/0G2rtgGRmXhEb3LmaunOl5SM6OrYhu9+pXn3LEusZS2DK1YsYCGj5YN+tFjBZpjBvu728ii0ooHGN5qqRIyHhQwwl87UpkGlo77yFCdCR5ZvJVTQGCUEQZGxhidZex4mx9xHyXCD+gVbGqRbI+kbx/gEAOyoWzhFLYlOLYH3Pn2JcX5aWN4Ase4Mv/UNQN1h69tYEDzROpChG5Us+NplilfNAjQyTFM32VWplzmMmuBcZA14tbAPeSNn03JfUJHW44Oejy04ROeYINCjQb5w1w3vS48i+U4o/N+hkDO820Ga6cMywp2qmwLQWH4G3ij7ax+ovQysMPiVnpxSg=
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTcyMzQwMzA3MTM1MywKICAicHJvZmlsZUlkIiA6ICJlMjI3ZTgzMTI1YWM0ZGIxYjlhMWZhNDc5MGVhYmQxMyIsCiAgInByb2ZpbGVOYW1lIiA6ICJTY2FwY3JhZnQiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWY4N2NjNzhhMjc5ZWYwMDE2NTJkYTllYTc1ODA5ZDQxZGVkZmI2NWI0YWY5Y2UyMzFmNGVmODQwZjMyMmMyZSIKICAgIH0KICB9Cn0=
         updateSkins: false
-      type: PLAYER
-    traitnames: type,mounttrait,spawned,scoreboardtrait,inventory,skintrait,location
+    traitnames: scoreboardtrait,type,location,mounttrait,spawned,inventory,skintrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false

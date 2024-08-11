@@ -4,6 +4,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.checkerframework.checker.units.qual.N;
 
 import java.util.Objects;
 
@@ -11,8 +12,12 @@ public final class TwoWorlds extends JavaPlugin {
     @Override
     public void onEnable() {
         saveDefaultConfig();
-        Objects.requireNonNull(this.getCommand("fp")).setExecutor(new NPCCommand(this));
+        NPCCommand npcCommand = new NPCCommand(this);
+
+        Objects.requireNonNull(this.getCommand("fp")).setExecutor(npcCommand);
         Objects.requireNonNull(this.getCommand("reloadnpcconfig")).setExecutor(new ReloadCommand(this));
+
+        getServer().getPluginManager().registerEvents(npcCommand, this);
 
         ConsoleCommandSender console = Bukkit.getServer().getConsoleSender();
         String neonPurple = ChatColor.translateAlternateColorCodes('&', "&x&b&c&1&3&f&e");          // #BC13FE
