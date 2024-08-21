@@ -160,7 +160,7 @@ npc:
     # How many times to try load NPC skins (due to Minecraft rate-limiting skin requests, should rarely be less than 5
     max-retries: -1
     # Whether to try and look for the player skin for all new NPCs
-    # If this is set to false and you create an NPC named Dinnerbone, the NPC will have the default (steve/alex/etc) skin rather than trying to fetch the Dinnerbone skin
+    # If this is set to false, and you create an NPC named Dinnerbone, the NPC will have the default (steve/alex/etc) skin rather than trying to fetch the Dinnerbone skin
     try-fetch-default-skin: true
     # How long before retrying skin requests (typically due to Mojang rate limiting)
     retry-delay: 5s
